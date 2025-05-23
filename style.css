@@ -3,11 +3,9 @@ body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
   color: #333;
-  scroll-behavior: smooth;
-  transition: background 0.4s, color 0.4s;
-  background: #f5f5f5;
+  background: #f7f9fc;
+  line-height: 1.6;
 }
 
 a {
@@ -37,68 +35,58 @@ h2 {
 
 /* Header */
 header {
-  position: sticky;
-  top: 0;
-  background: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
   z-index: 1000;
 }
 
-.logo {
-  color: #00c896;
-  font-size: 1.5em;
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.small-logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.brand-name {
+  font-size: 1.4em;
   font-weight: bold;
+  color: #00c896;
 }
 
 nav a {
-  margin-left: 20px;
+  margin-left: 25px;
+  font-weight: 500;
 }
 
-/* Hero */
+/* Hero Section */
 .hero {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-              url('https://images.unsplash.com/photo-1555949963-aa79dcee981d?auto=format&fit=crop&w=1350&q=80') center/cover;
+  background: linear-gradient(to right, #00c896, #00a5a5);
   color: white;
   text-align: center;
   padding: 100px 20px;
 }
 
 .hero h1 {
-  font-size: 48px;
-  margin: 0;
+  font-size: 42px;
+  margin-bottom: 10px;
 }
 
 .hero h1 span {
-  color: #00c896;
+  color: #ffe600;
 }
 
 .hero p {
   font-size: 18px;
-  margin-top: 15px;
-}
-
-/* Cards (if needed later) */
-.cards {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.card {
-  background: #f9f9f9;
-  padding: 20px;
-  flex: 1 1 250px;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-.card:hover {
-  transform: translateY(-5px);
+  margin-bottom: 25px;
 }
 
 /* Footer */
@@ -109,80 +97,33 @@ footer {
   padding: 20px;
 }
 
-/* Logo Section */
-.logo-section {
-  background-color: #0a2a2f;
-  text-align: center;
-  padding: 60px 20px;
-}
-
-.logo-container {
-  position: relative;
-  display: inline-block;
-}
-
-.logo-ring {
-  width: 280px;
-  height: 280px;
-  border: 6px solid #00c896;
-  border-top: 6px solid transparent;
-  border-radius: 50%;
-  animation: spin 5s linear infinite;
-  position: absolute;
-  top: -20px;
-  left: -20px;
-  z-index: 0;
-}
-
-.logo-img {
-  width: 240px;
-  height: auto;
-  z-index: 1;
-  position: relative;
-}
-
-.logo-quote {
-  margin-top: 20px;
-  font-size: 18px;
-  color: #ccc;
-  font-style: italic;
-  font-weight: 500;
-}
-
-/* Animation */
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
 /* Responsive */
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 32px;
   }
 
-  .hero p {
-    font-size: 16px;
-  }
-
   nav {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
+    justify-content: center;
   }
 
-  .cards {
+  .header-left {
     flex-direction: column;
+    align-items: flex-start;
   }
 
-  .logo-ring {
-    width: 200px;
-    height: 200px;
-    top: -15px;
-    left: -15px;
+  .brand-name {
+    font-size: 1.2em;
   }
 
-  .logo-img {
-    width: 180px;
+  .small-logo {
+    height: 35px;
   }
+}
+  .logo-with-name {
+    height: 45px;
+    object-fit: contain;
 }
