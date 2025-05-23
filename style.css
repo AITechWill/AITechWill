@@ -212,3 +212,24 @@ nav a {
 p, a, li {
   font-weight: 400; /* normal body text */
 }
+/* Mobile responsiveness fix */
+@media (max-width: 600px) {
+  header {
+    padding: 10px 15px;
+    justify-content: flex-start; /* Align logo + nav closer */
+    gap: 15px; /* Adds spacing between logo and nav */
+  }
+
+  nav {
+    margin-left: 10px;
+  }
+
+  nav a {
+    margin: 0 8px;
+    font-size: 14px; /* Optional: Slightly smaller for mobile */
+  }
+
+  .header-left img {
+    max-width: 90px; /* Reduce logo size if it's too wide */
+  }
+}
