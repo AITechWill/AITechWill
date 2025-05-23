@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AI TechWill</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
   <!-- AOS CSS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -21,7 +24,9 @@
       <a href="#internship">Internships</a>
       <a href="#testimonials">Testimonials</a>
       <a href="#contact">Contact</a>
-      <button id="darkToggle">🌙</button>
+      <button id="darkToggle" title="Toggle Dark Mode">
+        <i class="fas fa-moon"></i>
+      </button>
     </nav>
   </header>
 
@@ -40,7 +45,7 @@
   <!-- About -->
   <section id="about" class="section" data-aos="fade-up">
     <h2>About Us</h2>
-    <p>AI TechWill is a startup focused on helping students gain real-world skills through AI, Web, and App Development internships.</p>
+    <p>AI TechWill is a startup focused on helping students to gain real-world skills through AI, Web, and App Development internships.</p>
   </section>
 
   <!-- Internships -->
@@ -67,6 +72,11 @@
     <h2>What Students Say</h2>
     <blockquote>"The AI TechWill internship helped me get hired!" — Aishwarya, B.Tech</blockquote>
     <blockquote>"I learned more in 2 months than in college!" — Rohit, CSE Student</blockquote>
+    <blockquote>"AI TechWill gave me hands-on experience in real projects. The mentors were supportive, and I feel confident about my career in tech now!" Sravani M., B.Tech CSE Student</blockquote>
+    <blockquote>“Unlike typical internships, here I actually built a working app with a team. It felt like a startup experience!” — Rohan K., Final Year IT Student</blockquote>
+    <blockquote>“Learning AI with real guidance, weekly tasks, and reviews helped me build my GitHub profile. Highly recommended.” — Neha R., AI/ML Enthusiast</blockquote>
+    <blockquote>“Their UI/UX and full-stack projects helped me land an interview at a top startup. Worth the time!” — Aditya P., Recent Graduate</blockquote>
+    <blockquote>“Clear communication, real deadlines, and career tips—this was not just an internship, it was a turning point.” — Divya T., 3rd Year ECE</blockquote>
   </section>
 
   <!-- Contact -->
@@ -91,10 +101,17 @@
   <script>
     AOS.init();
 
-    const toggleBtn = document.getElementById('darkToggle');
-    toggleBtn.addEventListener('click', () => {
-      document.body.classList.toggle('dark');
-    });
+    const toggle = document.getElementById('darkToggle');
+  const icon = toggle.querySelector('i');
+
+  toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    if (document.body.classList.contains('dark')) {
+      icon.classList.replace('fa-moon', 'fa-sun');
+    } else {
+      icon.classList.replace('fa-sun', 'fa-moon');
+    }
+  });
   </script>
 </body>
 </html>

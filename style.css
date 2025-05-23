@@ -52,7 +52,7 @@ header {
 }
 
 .small-logo {
-  height: 40px;
+  height: 100px;
   margin-right: 10px;
 }
 
@@ -72,7 +72,7 @@ nav a {
   background: linear-gradient(to right, #00c896, #00a5a5);
   color: white;
   text-align: center;
-  padding: 100px 20px;
+  padding: 15px 20px;
 }
 
 .hero h1 {
@@ -120,11 +120,71 @@ footer {
   }
 
   .small-logo {
-    height: 35px;
+    height: 70px;
   }
 }
 .inline-logo {
   height: 40px;
   vertical-align: middle;
   margin-left: 10px;
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  nav a {
+    font-size: 14px;
+    padding: 8px 0;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+#darkToggle {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 5px;
+  color: inherit;
+  transition: transform 0.3s;
+}
+
+#darkToggle:hover {
+  transform: scale(1.2);
+}
+body.dark {
+  background: #111;
+  color: #eee;
+}
+
+body.dark header {
+  background: #1c1c1c;
+  color: white;
+}
+
+body.dark .card {
+  background: #222;
+  color: white;
+}
+
+body.dark footer {
+  background: #1a1a1a;
 }
