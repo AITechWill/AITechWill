@@ -2,115 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AI TechWill</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-  <style>
-    * {
-      margin: 0; padding: 0; box-sizing: border-box;
-      font-family: 'Roboto', sans-serif;
-    }
-    body {
-      background: #f4f4f9;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background: #2c3e50;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      margin-top: 10px;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 60px 20px;
-      text-align: center;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      background: #27ae60;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-    }
-    footer {
-      background: #2c3e50;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-    iframe {
-      border: none;
-      width: 100%;
-      height: 500px;
-      max-width: 600px;
-    }
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 24px;
-      }
-      nav a {
-        display: block;
-        margin: 10px 0;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="logo-container">
-    <div class="rotating-ring"></div>
-    <img src="logo.png" alt="AITechWill Logo" class="logo-core" />
-    <p class="logo-quote">"Rooted in Code. Rising with Will"</p>
-  </div>
 
+  <!-- Logo Section -->
+  <section class="logo-section">
+    <div class="logo-container">
+      <div class="logo-ring"></div>
+      <img src="logo.png" alt="AI TechWill Logo" class="logo-img" />
+      <p class="logo-quote">"Rooted in Code. Rising with Will"</p>
+    </div>
+  </section>
+
+  <!-- Hero Section -->
   <header>
-    <h1 data-aos="zoom-in">Welcome to AI TechWill</h1>
-    <p data-aos="fade-up">Empowering Future Engineers with AI & Tech Internships</p>
+    <div class="logo">AI TechWill</div>
     <nav>
       <a href="#about">About</a>
-      <a href="#services">Internships</a>
+      <a href="#internships">Internships</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <section id="about" data-aos="fade-right">
+  <section class="hero">
+    <h1>Welcome to <span>AI TechWill</span></h1>
+    <p>Empowering Future Engineers with AI & Tech Internships</p>
+    <a href="#contact" class="btn">Join Us</a>
+  </section>
+
+  <!-- About -->
+  <section id="about">
     <h2>About Us</h2>
-    <p>AI TechWill is a platform built to provide hands-on tech experience for engineering students across India through innovative AI-driven projects and app development internships.</p>
+    <p>AI TechWill is a platform built to provide hands-on tech experience for engineering students across India through innovative AI-driven projects and app development.</p>
   </section>
 
-  <section id="services" data-aos="fade-left">
+  <!-- Internships -->
+  <section id="internships">
     <h2>Internships</h2>
-    <p>We offer internships in app development, machine learning, and real-world AI solutions. Each student receives mentoring, certificates, and practical exposure.</p>
-    <a href="#contact" class="btn">Apply Now</a>
+    <p>We offer project-based AI internships in fields like machine learning, web development, and cloud computing.</p>
   </section>
 
-  <section id="contact" data-aos="fade-up">
-    <h2>Contact Us</h2>
-    <p>Have questions or want to join our internship program? Fill out the form below!</p>
-    <!-- Replace this iframe with your real Google Form embed code -->
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfDUMMYFORM/viewform?embedded=true">Loading…</iframe>
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email us at <a href="mailto:info@aitechwill.com">info@aitechwill.com</a></p>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 AI TechWill. All rights reserved.</p>
   </footer>
-
-  <!-- AOS Animations -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
 
 </body>
 </html>
