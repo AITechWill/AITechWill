@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AI TechWill</title>
   <link rel="stylesheet" href="style.css" />
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -16,40 +19,80 @@
     </div>
     <nav>
       <a href="#about">About</a>
-      <a href="#internships">Internships</a>
+      <a href="#internship">Internships</a>
+      <a href="#testimonials">Testimonials</a>
       <a href="#contact">Contact</a>
+      <button id="darkToggle">🌙</button>
     </nav>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section class="hero">
-    <h1>Welcome to <span>AI TechWill</span></h1>
-    <p>Empowering Future Engineers with AI & Tech Internships</p>
-    <a href="#contact" class="btn">Join Us</a>
+    <div class="hero-content">
+      <h1 class="fade-in">Welcome to <span>AI TechWill</span></h1>
+      <p class="fade-in delay">Empowering Students Through AI & Internships</p>
+      <a href="#internship" class="btn fade-in delay2">Explore Programs</a>
+    </div>
   </section>
 
   <!-- About -->
-  <section id="about">
+  <section id="about" class="section" data-aos="fade-up">
     <h2>About Us</h2>
-    <p>AI TechWill is a platform built to provide hands-on tech experience for engineering students across India through innovative AI-driven projects and app development.</p>
+    <p>AI TechWill is a startup focused on helping students gain real-world skills through AI, Web, and App Development internships.</p>
   </section>
 
   <!-- Internships -->
-  <section id="internships">
-    <h2>Internships</h2>
-    <p>We offer project-based AI internships in fields like machine learning, web development, and cloud computing.</p>
+  <section id="internship" class="section" data-aos="fade-up">
+    <h2>Internship Tracks</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>💻 Web Development</h3>
+        <p>Create and deploy websites using HTML, CSS, JS, React.</p>
+      </div>
+      <div class="card">
+        <h3>🤖 AI & ML</h3>
+        <p>Build smart apps using Python, NLP, and Machine Learning.</p>
+      </div>
+      <div class="card">
+        <h3>📱 App Development</h3>
+        <p>Develop Android apps using Flutter and Firebase.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="section" data-aos="fade-up">
+    <h2>What Students Say</h2>
+    <blockquote>"The AI TechWill internship helped me get hired!" — Aishwarya, B.Tech</blockquote>
+    <blockquote>"I learned more in 2 months than in college!" — Rohit, CSE Student</blockquote>
   </section>
 
   <!-- Contact -->
-  <section id="contact">
-    <h2>Contact</h2>
+  <section id="contact" class="section" data-aos="fade-up">
+    <h2>Contact Us</h2>
     <p>Email us at <a href="aitechwill.cloud@gmail.com">info@aitechwill.com</a></p>
+    <p>Fill out the form below to reach us:</p>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScr8SAybdmKlwyyMBYgGU6lZ3F5rhv8TROgDTAJlz_4uvvUsQ/viewform?embedded=true" width="640" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 AI TechWill. All rights reserved.</p>
+    <p>© 2025 AI TechWill. All rights reserved.</p>
+    <div class="social">
+      <a href="#"><img src="https://img.icons8.com/ios-filled/24/github.png"/></a>
+      <a href="#"><img src="https://img.icons8.com/ios-filled/24/linkedin.png"/></a>
+    </div>
   </footer>
 
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    const toggleBtn = document.getElementById('darkToggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
 </body>
 </html>
