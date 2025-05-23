@@ -1,6 +1,6 @@
 /* General */
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
   color: #333;
@@ -52,7 +52,7 @@ header {
 }
 
 .small-logo {
-  height: 100px;
+  height: 80px;
   margin-right: 10px;
 }
 
@@ -120,11 +120,11 @@ footer {
   }
 
   .small-logo {
-    height: 70px;
+    height: 60px;
   }
 }
 .inline-logo {
-  height: 40px;
+  height: 55px;
   vertical-align: middle;
   margin-left: 10px;
 }
@@ -187,4 +187,28 @@ body.dark .card {
 
 body.dark footer {
   background: #1a1a1a;
+}
+iframe {
+  width: 100%;
+  max-width: 100%;
+}
+.inline-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.2em;
+}
+body.dark blockquote {
+  color: #ccc;
+}
+h1, h2 {
+  font-weight: 700; /* bold headings */
+}
+
+nav a {
+  font-weight: 600; /* semi-bold navigation links */
+}
+
+p, a, li {
+  font-weight: 400; /* normal body text */
 }
