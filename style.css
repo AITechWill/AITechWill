@@ -287,7 +287,7 @@ p, a, li {
 }
 .logo-wrapper img {
   height: 40px;
-]
+}
 nav {
   position: relative;
 }
@@ -307,7 +307,7 @@ nav {
 
 /* Hide menu for mobile by default */
 @media (max-width: 768px) {
-  #nav-links {
+  .nav-links {
     display: none;
     flex-direction: column;
     background-color: #fff;
@@ -348,7 +348,7 @@ nav {
     display: none;
   }
 
-  #nav-links {
+  .nav-links {
     display: flex !important;
   }
 }
