@@ -320,11 +320,11 @@ nav {
     z-index: 999;
   }
 
-  #nav-links.active {
+  .nav-links.active {
     display: flex;
   }
 
-  #mobile-menu {
+  .mobile-menu {
     display: block;
     cursor: pointer;
   }
@@ -344,7 +344,7 @@ nav {
 
 /* Desktop */
 @media (min-width: 769px) {
-  #mobile-menu {
+  .mobile-menu {
     display: none;
   }
 
@@ -360,5 +360,4 @@ nav {
 
   body.dark .nav-links li a {
     color: #fff;
-  }
 }
