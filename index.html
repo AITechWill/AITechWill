@@ -16,19 +16,26 @@
 
   <!-- Header -->
   <header>
-    <div class="header-left">
+    <div class="logo-wrapper">
       <img src="AITechWill_Logo.png" alt="AI TechWill Logo" class="small-logo" />
       <img src="logo2.png" alt="AI TechWill" class="inline-logo" />
       </div>    
-    <nav>
-      <a href="#about">About</a>
-      <a href="#internship">Internships</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#contact">Contact</a>
-      <button id="darkToggle" title="Toggle Dark Mode" aria-label="Toggle Dark Mode">
-        <i class="fas fa-moon"></i>
-      </button>      
-    </nav>
+      <nav>
+        <div class="menu-toggle" id="mobile-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#internship">Internships</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <button id="darkToggle" title="Toggle Dark Mode" aria-label="Toggle Dark Mode">
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
   </header>
 
   <!-- Hero -->
@@ -129,5 +136,6 @@
     }
   });
   </script>
+  <script src="script.js"></script>
 </body>
 </html>
