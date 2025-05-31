@@ -1,16 +1,12 @@
-<script>
-  const toggle = document.getElementById('darkToggle');
-  const icon = toggle.querySelector('i');
-  const menu = document.getElementById('mobile-menu');
-  const navLinks = document.getElementById('nav-links');
+document.getElementById("mobile-menu").addEventListener("click", function () {
+  document.getElementById("nav-links").classList.toggle("showing");
+});
 
-  toggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark');
-    icon.classList.toggle('fa-moon');
-    icon.classList.toggle('fa-sun');
-  });
+window.onscroll = function () {
+  document.getElementById("topBtn").style.display = window.scrollY > 100 ? "block" : "none";
+};
 
-  menu.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-  });
-</script>
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
